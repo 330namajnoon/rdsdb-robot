@@ -38,6 +38,6 @@ function removeSession() {
     })
 }
 
-const timeOut = (time) => new Promise((resolve) => setTimeout(resolve, time));
+const timeOut = (time) => new Promise((resolve) => setTimeout(() => resolve(true), time));
 
 module.exports = { promptText, loadSession, saveSession, timeOut, removeSession };
